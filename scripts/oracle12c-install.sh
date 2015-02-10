@@ -16,8 +16,8 @@ sudo hostname -v oracle12c.localdomain
 
 cd /vagrant/database_installer
 
-unzip linuxamd64_12c_database_1of2.zip
-unzip linuxamd64_12c_database_2of2.zip
+unzip linuxamd64_12102_database_1of2.zip
+unzip linuxamd64_12102_database_2of2.zip
 
 cd /home/oracle
 
@@ -95,7 +95,7 @@ sudo -Eu oracle $ORACLE_HOME/bin/dbca -silent \
 -templateName General_Purpose.dbc \
 -gdbName cdb12c \
 -sid cdb12c \
--createAsContainerDatabase true \
+-createAsContainerDatabase false \
 -numberOfPdbs 1 \
 -pdbName pdb \
 -pdbadminUsername vagrant \

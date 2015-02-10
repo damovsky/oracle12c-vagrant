@@ -8,7 +8,7 @@ sudo -Eu oracle $ORACLE_HOME/bin/dbca -silent \
 -templateName General_Purpose.dbc \
 -gdbName cdb12c \
 -sid cdb12c \
--createAsContainerDatabase true \
+-createAsContainerDatabase false \
 -numberOfPdbs 1 \
 -pdbName pdb \
 -pdbadminUsername vagrant \
